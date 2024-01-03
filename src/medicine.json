@@ -1,0 +1,50 @@
+{
+    "medicines": [
+      {
+        "id": 1,
+        "name": "Paracetamol",
+        "description": "Used to relieve pain and reduce fever.",
+        "manufacturer": "Generic Pharma",
+        "dosage": "500mg",
+        "price": 5.99,
+        "availability": true
+      },
+      {
+        "id": 2,
+        "name": "Ibuprofen",
+        "description": "Anti-inflammatory drug for pain relief.",
+        "manufacturer": "MediCorp",
+        "dosage": "200mg",
+        "price": 7.49,
+        "availability": true
+      },
+      {
+        "id": 3,
+        "name": "Ciprofloxacin",
+        "description": "Antibiotic for bacterial infections.",
+        "manufacturer": "HealthCare Ltd.",
+        "dosage": "500mg",
+        "price": 12.99,
+        "availability": false
+      },
+      {
+        "id": 4,
+        "name": "Loratadine",
+        "description": "Antihistamine for allergy relief.",
+        "manufacturer": "Pharma Solutions",
+        "dosage": "10mg",
+        "price": 8.75,
+        "availability": true
+      },
+      {
+        "id": 5,
+        "name": "Omeprazole",
+        "description": "Proton pump inhibitor for heartburn.",
+        "manufacturer": "MediCare Labs",
+        "dosage": "20mg",
+        "price": 15.25,
+        "availability": true
+      }
+    ]
+  }
+  

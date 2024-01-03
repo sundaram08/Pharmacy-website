@@ -2,13 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Search from '../Search/Search'
 import Medicine from '../Medicines/Medicine'
-const sampleMedicine = {
-  name: 'Sample Medicine',
-  image: 'https://example.com/sample-image.png',
-  price: {
-    final_price: 90.0,
-  },
-};
 function Home() {
   return (
     <div className='mt-24'>
@@ -49,6 +42,18 @@ function Home() {
             </div>
           </div>
         </header>
+        <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-1 gap-5 ">
+        <Medicine/>
+        <Medicine/>
+        <Medicine/>
+        <Medicine/>
+        <Medicine/>
+        <Medicine/>
+        <Medicine/>
+        <Medicine/>
+        <Medicine/>
+        <Medicine/>
+        </div>
       </div>
     </div>
   )
