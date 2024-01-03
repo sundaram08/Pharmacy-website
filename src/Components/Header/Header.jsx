@@ -5,7 +5,7 @@ import { FaShoppingCart } from 'react-icons/fa';
 function Header() {
   return (
     <div>
-      <header className="bg-blue-500 p-4 shadow-md">
+      <header className="bg-blue-500 p-1 w-full fixed top-0 shadow-md ">
         <nav className="flex justify-between items-center">
         <div className="bg-blue-500 p-4 rounded-md shadow-md">
           <Link to="/" className="text-2xl font-extrabold text-white">
