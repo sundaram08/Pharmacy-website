@@ -12,14 +12,14 @@ const Search = () => {
   
     return (
       <section className="p-1 m-0">
-        <div className="max-w-2xl mx-auto flex ">
+        <div className="max-w-2xl mx-auto flex">
           <input
             type="text"
             placeholder="Search for products..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className="p-2 border border-gray-300 rounded-l-md focus:outline-none focus:border-blue-500 flex-grow"
-            style={{ width: '350px' }} 
+            style={{ width: '1400px' }} 
           />
           <button
             type="submit"
