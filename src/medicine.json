@@ -18,7 +18,7 @@
     "name": "Paracetamol",
     "formula": "C8H9NO2",
     "price": 4.99,
-    "availability": false
+    "availability": true
   },
   {
     "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdti2AJqSEmJvbgzctWTqfabyHdGx1WOqdNw&usqp=CAU",
