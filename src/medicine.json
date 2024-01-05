@@ -1,50 +1,143 @@
-{
-    "medicines": [
-      {
-        "id": 1,
-        "name": "Paracetamol",
-        "description": "Used to relieve pain and reduce fever.",
-        "manufacturer": "Generic Pharma",
-        "dosage": "500mg",
-        "price": 5.99,
-        "availability": true
-      },
-      {
-        "id": 2,
-        "name": "Ibuprofen",
-        "description": "Anti-inflammatory drug for pain relief.",
-        "manufacturer": "MediCorp",
-        "dosage": "200mg",
-        "price": 7.49,
-        "availability": true
-      },
-      {
-        "id": 3,
-        "name": "Ciprofloxacin",
-        "description": "Antibiotic for bacterial infections.",
-        "manufacturer": "HealthCare Ltd.",
-        "dosage": "500mg",
-        "price": 12.99,
-        "availability": false
-      },
-      {
-        "id": 4,
-        "name": "Loratadine",
-        "description": "Antihistamine for allergy relief.",
-        "manufacturer": "Pharma Solutions",
-        "dosage": "10mg",
-        "price": 8.75,
-        "availability": true
-      },
-      {
-        "id": 5,
-        "name": "Omeprazole",
-        "description": "Proton pump inhibitor for heartburn.",
-        "manufacturer": "MediCare Labs",
-        "dosage": "20mg",
-        "price": 15.25,
-        "availability": true
-      }
-    ]
+[
+  {
+    "img": "https://5.imimg.com/data5/SELLER/Default/2023/7/330506870/UM/GZ/QO/135658020/aspirin-dispersible-tablets.jpg",
+    "name": "Aspirin",
+    "formula": "C9H8O4",
+    "price": 5.99,
+    "availability": true
+  },
+  {
+    "img": "https://5.imimg.com/data5/QD/KO/MY-608147/untitled-2.jpg",
+    "name": "Ibuprofen",
+    "formula": "C13H18O2",
+    "price": 7.99,
+    "availability": true
+  },
+  {
+    "img": "https://drbest.in/wp-content/uploads/2019/06/Ceknac-plus.jpg",
+    "name": "Paracetamol",
+    "formula": "C8H9NO2",
+    "price": 4.99,
+    "availability": false
+  },
+  {
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdti2AJqSEmJvbgzctWTqfabyHdGx1WOqdNw&usqp=CAU",
+    "name": "Amoxicillin",
+    "formula": "C16H19N3O5S",
+    "price": 12.99,
+    "availability": true
+  },
+  {
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCC6QEaqYT9n1CnQ93czT2D4I5TnAH7Vf7uQ&usqp=CAU",
+    "name": "Omeprazole",
+    "formula": "C17H19N3O3S",
+    "price": 9.99,
+    "availability": true
+  },
+  {
+    "img": "https://example.com/med1.jpg",
+    "name": "Medicine 1",
+    "formula": "C12H15N",
+    "price": 8.99,
+    "availability": true
+  },
+  {
+    "img": "https://example.com/med2.jpg",
+    "name": "Medicine 2",
+    "formula": "C15H21NO",
+    "price": 15.99,
+    "availability": false
+  },
+  {
+    "img": "https://example.com/med3.jpg",
+    "name": "Medicine 3",
+    "formula": "C14H18ClNO",
+    "price": 11.99,
+    "availability": true
+  },
+  {
+    "img": "https://example.com/med4.jpg",
+    "name": "Medicine 4",
+    "formula": "C13H18ClNO",
+    "price": 13.99,
+    "availability": false
+  },
+  {
+    "img": "https://example.com/med5.jpg",
+    "name": "Medicine 5",
+    "formula": "C11H17NO3",
+    "price": 7.99,
+    "availability": true
+  },
+  {
+    "img": "https://example.com/med6.jpg",
+    "name": "Medicine 6",
+    "formula": "C16H19NO4",
+    "price": 18.99,
+    "availability": true
+  },
+  {
+    "img": "https://example.com/med7.jpg",
+    "name": "Medicine 7",
+    "formula": "C18H26ClN3O",
+    "price": 14.99,
+    "availability": false
+  },
+  {
+    "img": "https://example.com/med8.jpg",
+    "name": "Medicine 8",
+    "formula": "C14H18N2O5",
+    "price": 16.99,
+    "availability": true
+  },
+  {
+    "img": "https://example.com/med9.jpg",
+    "name": "Medicine 9",
+    "formula": "C17H21NO4",
+    "price": 20.99,
+    "availability": false
+  },
+  {
+    "img": "https://example.com/med10.jpg",
+    "name": "Medicine 10",
+    "formula": "C16H18N2O4S",
+    "price": 22.99,
+    "availability": true
+  },
+  {
+    "img": "https://example.com/med11.jpg",
+    "name": "Medicine 11",
+    "formula": "C12H16N2O2",
+    "price": 25.99,
+    "availability": true
+  },
+  {
+    "img": "https://example.com/med12.jpg",
+    "name": "Medicine 12",
+    "formula": "C15H14ClN3O4S2",
+    "price": 11.99,
+    "availability": false
+  },
+  {
+    "img": "https://example.com/med13.jpg",
+    "name": "Medicine 13",
+    "formula": "C14H12FNO3",
+    "price": 14.99,
+    "availability": true
+  },
+  {
+    "img": "https://example.com/med14.jpg",
+    "name": "Medicine 14",
+    "formula": "C15H14ClN3O4S2",
+    "price": 17.99,
+    "availability": true
+  },
+  {
+    "img": "https://example.com/med15.jpg",
+    "name": "Medicine 15",
+    "formula": "C16H18N2O4S",
+    "price": 19.99,
+    "availability": false
   }
-  
+]
+

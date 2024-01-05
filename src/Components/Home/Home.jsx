@@ -42,16 +42,7 @@ function Home() {
             </div>
           </div>
         </header>
-        <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-1 gap-5 ">
-        <Medicine/>
-        <Medicine/>
-        <Medicine/>
-        <Medicine/>
-        <Medicine/>
-        <Medicine/>
-        <Medicine/>
-        <Medicine/>
-        <Medicine/>
+        <div>
         <Medicine/>
         </div>
       </div>
