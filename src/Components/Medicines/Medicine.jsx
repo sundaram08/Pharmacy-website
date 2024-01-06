@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import medicinesData from '/Users/sundaramdwivedi/Desktop/React/reactroute/src/medicine.json';
+import medicinesData from './medicine.json';
 
 function Medicine() {
   const [medicines, setMedicines] = React.useState([]);
