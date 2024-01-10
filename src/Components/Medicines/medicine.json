@@ -4,6 +4,7 @@
     "name": "Aspirin",
     "formula": "C9H8O4",
     "price": 5.99,
+    "category": "",
     "availability": true
   },
   {
@@ -11,6 +12,7 @@
     "name": "Ibuprofen",
     "formula": "C13H18O2",
     "price": 7.99,
+    "category": "",
     "availability": true
   },
   {
@@ -18,6 +20,7 @@
     "name": "Paracetamol",
     "formula": "C8H9NO2",
     "price": 4.99,
+    "category": "",
     "availability": true
   },
   {
@@ -25,6 +28,7 @@
     "name": "Amoxicillin",
     "formula": "C16H19N3O5S",
     "price": 12.99,
+    "category": "",
     "availability": true
   },
   {
@@ -32,111 +36,95 @@
     "name": "Omeprazole",
     "formula": "C17H19N3O3S",
     "price": 9.99,
+    "category": "",
     "availability": true
   },
   {
-    "img": "https://example.com/med1.jpg",
-    "name": "Medicine 1",
+    "img": "https://www.tradeindia.com/_next/image/?url=https%3A%2F%2Ftiimg.tistatic.com%2Ffp%2F1%2F007%2F852%2Fvitamin-b-complex-capsules--931.jpg&w=750&q=75",
+    "name": "Vitamin B",
     "formula": "C12H15N",
+    "category":"healthcare",
     "price": 8.99,
     "availability": true
   },
   {
-    "img": "https://example.com/med2.jpg",
-    "name": "Medicine 2",
+    "img": "https://tajgenerics.com/wp-content/uploads/Vitamin-C-Tablet-Ascorbic-acid-Chewable-Tablets-500mg-manufcaturer-supplier-india-1-scaled.jpg",
+    "name": "Vitamin C",
     "formula": "C15H21NO",
     "price": 15.99,
+    "category": "healthcare",
     "availability": false
   },
   {
-    "img": "https://example.com/med3.jpg",
-    "name": "Medicine 3",
+    "img": "https://images.apollo247.in/pub/media/catalog/product/O/2/O2T0001_1_1.jpg",
+    "name": "O2",
     "formula": "C14H18ClNO",
     "price": 11.99,
+    "category": "digestion",
     "availability": true
   },
   {
-    "img": "https://example.com/med4.jpg",
-    "name": "Medicine 4",
-    "formula": "C13H18ClNO",
+    "img": "https://cpimg.tistatic.com/07033717/b/4/PPE-Kit.jpg",
+    "name": "PPE Kit",
+    "formula": "none",
     "price": 13.99,
+    "category": "covid",
     "availability": false
   },
   {
-    "img": "https://example.com/med5.jpg",
-    "name": "Medicine 5",
+    "img": "https://i5.walmartimages.ca/images/Enlarge/392/924/6000198392924.jpg",
+    "name": "Enzymes Digestive",
     "formula": "C11H17NO3",
     "price": 7.99,
+    "category": "digestion",
     "availability": true
   },
   {
-    "img": "https://example.com/med6.jpg",
-    "name": "Medicine 6",
+    "img": "https://images.apollo247.in/pub/media/catalog/product/V/I/VIT0060_1_1.jpg",
+    "name": "Vitamin A",
     "formula": "C16H19NO4",
     "price": 18.99,
+    "category": "healthcare",
     "availability": true
   },
   {
-    "img": "https://example.com/med7.jpg",
-    "name": "Medicine 7",
-    "formula": "C18H26ClN3O",
-    "price": 14.99,
-    "availability": false
-  },
-  {
-    "img": "https://example.com/med8.jpg",
-    "name": "Medicine 8",
+    "img": "https://5.imimg.com/data5/SELLER/Default/2022/7/RV/JY/SB/85949022/cholecalciferol-vitamin-d3-granules.jpeg",
+    "name": "Vitamin D3",
     "formula": "C14H18N2O5",
     "price": 16.99,
+    "category": "healthcare",
     "availability": true
   },
   {
-    "img": "https://example.com/med9.jpg",
-    "name": "Medicine 9",
+    "img": "https://5.imimg.com/data5/SELLER/Default/2023/3/AA/CD/GA/28877593/iron-compound-herbal-syrup.png",
+    "name": "LOH",
     "formula": "C17H21NO4",
     "price": 20.99,
+    "category": "herbals",
     "availability": false
   },
   {
-    "img": "https://example.com/med10.jpg",
-    "name": "Medicine 10",
+    "img": "https://cdn01.pharmeasy.in/dam/products_otc/E07416/dr-ortho-an-ayurvedic-medicine-oil-bottle-of-60-ml-2-1688467959.jpg",
+    "name": "Dr. Ortho Oil",
     "formula": "C16H18N2O4S",
     "price": 22.99,
+    "category": "ortho",
     "availability": true
   },
   {
-    "img": "https://example.com/med11.jpg",
-    "name": "Medicine 11",
+    "img": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71U+mYLHcWL._AC_UF1000,1000_QL80_.jpg",
+    "name": "SugarFree",
     "formula": "C12H16N2O2",
     "price": 25.99,
+    "category": "diabetics",
     "availability": true
   },
   {
-    "img": "https://example.com/med12.jpg",
-    "name": "Medicine 12",
-    "formula": "C15H14ClN3O4S2",
-    "price": 11.99,
-    "availability": false
-  },
-  {
-    "img": "https://example.com/med13.jpg",
-    "name": "Medicine 13",
-    "formula": "C14H12FNO3",
-    "price": 14.99,
-    "availability": true
-  },
-  {
-    "img": "https://example.com/med14.jpg",
-    "name": "Medicine 14",
-    "formula": "C15H14ClN3O4S2",
-    "price": 17.99,
-    "availability": true
-  },
-  {
-    "img": "https://example.com/med15.jpg",
-    "name": "Medicine 15",
-    "formula": "C16H18N2O4S",
+    "img": "https://www.netmeds.com/images/product-v1/600x600/958409/status_n95_face_mask_white_pack_of_20_0_1.jpg",
+    "name": "N95 Mask",
+    "formula": "none",
     "price": 19.99,
+    "category": "covid",
     "availability": false
   }
 ]

@@ -1,31 +1,49 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { filterMedicines } from '../../features/medicineSlice'
 import Search from '../Search/Search'
 import Medicine from '../Medicines/Medicine'
 function Home() {
+  const dispatch = useDispatch();
+
+  const handleCategoryClick = (category) => {
+    dispatch(filterMedicines(category));
+  };
   return (
-    <div className='mt-24'>
+    <>
+    <div className='p-1 mt-12'>
+    {/* <Strip/> */}
       <div className="bg-gray-100 m-0">
         <div className='flex flex-wrap'>
           <section className="container mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-1 gap-5 ">
+            <div className="grid grid-cols-1 md:grid-cols-7 lg:grid-cols-1 gap-5 ">
               {/* Add featured content, such as images, promotions, etc. */}
-              <div className="bg-red-400 p-1 mt-1 mb-1 rounded-lg shadow-md flex items-center justify-center hover:bg-blue-500">
+              <div className="bg-red-400 p-1 mt-1 mb-1 rounded-lg shadow-md flex items-center justify-center hover:bg-blue-500"
+                onClick={() => handleCategoryClick('all')} >
+                <h2 className="text-l font-semibold mb-1">All</h2>
+              </div>
+              <div className="bg-red-400 p-1 mt-1 mb-1 rounded-lg shadow-md flex items-center justify-center hover:bg-blue-500"
+                onClick={() => handleCategoryClick('healthcare')} >
                 <h2 className="text-l font-semibold mb-2">Healthcare</h2>
               </div>
-              <div className="bg-red-400 p-1 mt-1 mb-1 rounded-lg  shadow-md  flex items-center justify-center hover:bg-blue-500 ">
+              <div className="bg-red-400 p-1 mt-1 mb-1 rounded-lg  shadow-md  flex items-center justify-center hover:bg-blue-500"
+               onClick={() => handleCategoryClick('diabetics')} >
                 <h2 className="text-l font-semibold mb-2">Diabetics</h2>
               </div>
-              <div className="bg-red-400 p-1 mt-1 mb-1 rounded-lg shadow-md flex items-center justify-center hover:bg-blue-500">
+              <div className="bg-red-400 p-1 mt-1 mb-1 rounded-lg shadow-md flex items-center justify-center hover:bg-blue-500"
+              onClick={() => handleCategoryClick('digestion')}>
                 <h2 className="text-l font-semibold mb-2">Digestion</h2>
               </div>
-              <div className="bg-red-400 p-1 mt-1 mb-1 rounded-lg shadow-md  flex items-center justify-center hover:bg-blue-500">
+              <div className="bg-red-400 p-1 mt-1 mb-1 rounded-lg shadow-md  flex items-center justify-center hover:bg-blue-500"
+              onClick={() => handleCategoryClick('covid')}>
                 <h2 className="text-l font-semibold mb-2">Covid</h2>
               </div>
-              <div className="bg-red-400 p-1 mt-1 mb-1 rounded-lg shadow-md  flex items-center justify-center hover:bg-blue-500">
-                <h2 className="textl font-semibold mb-2">Orthopaedics</h2>
+              <div className="bg-red-400 p-1 mt-1 mb-1 rounded-lg shadow-md  flex items-center justify-center hover:bg-blue-500"
+              onClick={() => handleCategoryClick('ortho')}>
+                <h2 className="textl font-semibold mb-2">Ortho</h2>
               </div>
-              <div className="bg-red-400 p-1 mt-1 mb-1 rounded-lg shadow-md  flex items-center justify-center hover:bg-blue-500">
+              <div className="bg-red-400 p-1 mt-1 mb-1 rounded-lg shadow-md  flex items-center justify-center hover:bg-blue-500"
+              onClick={() => handleCategoryClick('herbals')} >
                 <h2 className="text-l font-semibold mb-2">Herbals</h2>
               </div>
             </div> 
@@ -47,6 +65,7 @@ function Home() {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
