@@ -1,14 +1,22 @@
 import React from 'react'
-import { useDispatch } from 'react-redux'
-import { filterMedicines } from '../../features/medicineSlice'
+import { useDispatch,useSelector } from 'react-redux'
+import { filterMedicines,clearSelectedMedicine } from '../../features/medicineSlice'
 import Search from '../Search/Search'
 import Medicine from '../Medicines/Medicine'
+import  MedicineDetails  from '../Medicines/MedicineDetails'
 function Home() {
   const dispatch = useDispatch();
+  const selectedMedicine = useSelector((state) => state.medicine.selectedMedicine);
+
+  const handleCloseDetails = () => {
+    dispatch(clearSelectedMedicine());
+  };
 
   const handleCategoryClick = (category) => {
     dispatch(filterMedicines(category));
+    dispatch(clearSelectedMedicine());
   };
+
   return (
     <>
     <div className='p-1 mt-12'>
@@ -60,9 +68,12 @@ function Home() {
             </div>
           </div>
         </header>
-        <div>
+        <div >
         <Medicine/>
         </div>
+        {selectedMedicine && (
+        <MedicineDetails medicine={selectedMedicine}  onClose={handleCloseDetails} />
+      )}
       </div>
     </div>
     </>
