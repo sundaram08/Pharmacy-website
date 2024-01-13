@@ -1,7 +1,7 @@
-import React,{useEffect, useState} from 'react'
+import React,{useState} from 'react'
 import { FaSearch } from 'react-icons/fa';
 import { searchMedicines } from '../../features/medicineSlice';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 const Search = () => {
     const dispatch  = useDispatch();
     
@@ -10,6 +10,7 @@ const Search = () => {
     
       dispatch(searchMedicines(e.target.value))
     };
+
     return (
       <section className="p-1 m-0">
         <div className="max-w-2xl mx-auto flex">

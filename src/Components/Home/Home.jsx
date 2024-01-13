@@ -7,6 +7,7 @@ import  MedicineDetails  from '../Medicines/MedicineDetails'
 function Home() {
   const dispatch = useDispatch();
   const selectedMedicine = useSelector((state) => state.medicine.selectedMedicine);
+  const selectedCategory = useSelector((state) => state.medicine.selectedCategory);
 
   const handleCloseDetails = () => {
     dispatch(clearSelectedMedicine());
@@ -26,31 +27,39 @@ function Home() {
           <section className="container mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-7 lg:grid-cols-1 gap-5 ">
               {/* Add featured content, such as images, promotions, etc. */}
-              <div className="bg-red-400 p-1 mt-1 mb-1 rounded-lg shadow-md flex items-center justify-center hover:bg-blue-500"
-                onClick={() => handleCategoryClick('all')} >
+              <div className={` p-1 mt-1 mb-1 rounded-lg shadow-md flex items-center justify-center hover:bg-blue-500
+                bg-${selectedCategory === 'all' ? 'blue-500' : 'red-400'}`}
+                onClick={() => handleCategoryClick('all')} 
+                >
                 <h2 className="text-l font-semibold mb-1">All</h2>
               </div>
-              <div className="bg-red-400 p-1 mt-1 mb-1 rounded-lg shadow-md flex items-center justify-center hover:bg-blue-500"
+              <div className={` p-1 mt-1 mb-1 rounded-lg shadow-md flex items-center justify-center hover:bg-blue-500
+               bg-${selectedCategory === 'healthcare' ? 'blue-500' : 'red-400'}`}
                 onClick={() => handleCategoryClick('healthcare')} >
                 <h2 className="text-l font-semibold mb-2">Healthcare</h2>
               </div>
-              <div className="bg-red-400 p-1 mt-1 mb-1 rounded-lg  shadow-md  flex items-center justify-center hover:bg-blue-500"
+              <div className={`p-1 mt-1 mb-1 rounded-lg  shadow-md  flex items-center justify-center hover:bg-blue-500
+               bg-${selectedCategory === 'diabetics' ? 'blue-500' : 'red-400'}`}
                onClick={() => handleCategoryClick('diabetics')} >
                 <h2 className="text-l font-semibold mb-2">Diabetics</h2>
               </div>
-              <div className="bg-red-400 p-1 mt-1 mb-1 rounded-lg shadow-md flex items-center justify-center hover:bg-blue-500"
+              <div className={`p-1 mt-1 mb-1 rounded-lg shadow-md flex items-center justify-center hover:bg-blue-500
+               bg-${selectedCategory === 'digestion' ? 'blue-500' : 'red-400'}`}
               onClick={() => handleCategoryClick('digestion')}>
                 <h2 className="text-l font-semibold mb-2">Digestion</h2>
               </div>
-              <div className="bg-red-400 p-1 mt-1 mb-1 rounded-lg shadow-md  flex items-center justify-center hover:bg-blue-500"
+              <div className={`p-1 mt-1 mb-1 rounded-lg shadow-md  flex items-center justify-center hover:bg-blue-500
+               bg-${selectedCategory === 'covid' ? 'blue-500' : 'red-400'}`}
               onClick={() => handleCategoryClick('covid')}>
                 <h2 className="text-l font-semibold mb-2">Covid</h2>
               </div>
-              <div className="bg-red-400 p-1 mt-1 mb-1 rounded-lg shadow-md  flex items-center justify-center hover:bg-blue-500"
+              <div className={`p-1 mt-1 mb-1 rounded-lg shadow-md  flex items-center justify-center hover:bg-blue-500
+               bg-${selectedCategory === 'ortho' ? 'blue-500' : 'red-400'}`}
               onClick={() => handleCategoryClick('ortho')}>
                 <h2 className="textl font-semibold mb-2">Ortho</h2>
               </div>
-              <div className="bg-red-400 p-1 mt-1 mb-1 rounded-lg shadow-md  flex items-center justify-center hover:bg-blue-500"
+              <div className={`p-1 mt-1 mb-1 rounded-lg shadow-md  flex items-center justify-center hover:bg-blue-500
+               bg-${selectedCategory === 'herbals' ? 'blue-500' : 'red-400'}`}
               onClick={() => handleCategoryClick('herbals')} >
                 <h2 className="text-l font-semibold mb-2">Herbals</h2>
               </div>

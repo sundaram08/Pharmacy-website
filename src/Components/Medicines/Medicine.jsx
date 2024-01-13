@@ -15,7 +15,6 @@ function Medicine() {
   useEffect(() => {
     
     try {
-      // medicinesData is an array of medicines from JSON file
       dispatch(setMedicines(medicinesData));
     } catch (error) {
       console.error('Error setting medicines:', error);
@@ -23,11 +22,6 @@ function Medicine() {
   }, [dispatch]);
 
  
-
-  // Filter medicines based on the selected category
-  // const filteredMedicines = selectedCategory === 'all'
-  //   ? allMedicines
-  //   : allMedicines.filter(medicine => medicine.category === selectedCategory);
 
   const filteredMedicines = (searchedText && searchedText.trim() !== '')
   ? (selectedCategory === 'all'
@@ -46,7 +40,7 @@ function Medicine() {
       )
   )
   : (selectedCategory === 'all' ? allMedicines : allMedicines.filter(medicine => medicine.category === selectedCategory));
-// ...
+
 
 
   return (

@@ -1,12 +1,11 @@
-// medicineSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   medicines: [],
-  filteredMedicines: [],
-  selectedCategory: 'all', // Added selectedCategory state
+  selectedCategory: 'all',
   selectedMedicine: null,
-  // searchedText: null
+  searchedText: null,
+  cartItems: []
 };
 
 export const medicineSlice = createSlice({
@@ -19,24 +18,11 @@ export const medicineSlice = createSlice({
     filterMedicines: (state, action) => {
       const category = action.payload;
       state.selectedCategory = category;
-      state.filteredMedicines = state.medicines.filter(
-        (medicine) => medicine.category === category
-      );
     },
     searchMedicines: (state, action) => {
-      const searchText = action.payload.toLowerCase(); // Convert search text to lowercase for case-insensitive comparison
+      const searchText = action.payload.toLowerCase();
     
       state.searchedText = searchText;
-    
-      state.filteredMedicines = state.medicines.filter((medicine) => {
-        const nameMatch = medicine.name.toLowerCase().includes(searchText);
-        const formulaMatch = medicine.formula.toLowerCase().includes(searchText);
-        const priceMatch = medicine.price.toString().includes(searchText);
-        const categoryMatch = medicine.category.toLowerCase().includes(searchText);
-    
-        // Return true if any of the fields match the search text
-        return nameMatch || formulaMatch || priceMatch || categoryMatch;
-      });
     },
     selectMedicine:(state,action)=>{
         state.selectedMedicine= action.payload;
@@ -44,8 +30,13 @@ export const medicineSlice = createSlice({
     clearSelectedMedicine:(state)=>{
       state.selectedMedicine= null;
     },
+    setCartItems: (state, action) => {
+      const newMedicine = action.payload;
+      state.cartItems = [...state.cartItems, newMedicine];
+    },
+    
   },
 });
 
-export const { setMedicines,searchMedicines, filterMedicines,selectMedicine,clearSelectedMedicine } = medicineSlice.actions;
+export const { setMedicines,searchMedicines, filterMedicines,selectMedicine,clearSelectedMedicine,setCartItems } = medicineSlice.actions;
 export default medicineSlice.reducer;
