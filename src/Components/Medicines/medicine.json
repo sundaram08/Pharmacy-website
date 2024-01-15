@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "img": "https://5.imimg.com/data5/SELLER/Default/2023/7/330506870/UM/GZ/QO/135658020/aspirin-dispersible-tablets.jpg",
     "name": "Aspirin",
     "formula": "C9H8O4",
@@ -8,6 +9,7 @@
     "availability": true
   },
   {
+    "id": 2,
     "img": "https://5.imimg.com/data5/QD/KO/MY-608147/untitled-2.jpg",
     "name": "Ibuprofen",
     "formula": "C13H18O2",
@@ -16,6 +18,7 @@
     "availability": true
   },
   {
+   "id": 3,
     "img": "https://drbest.in/wp-content/uploads/2019/06/Ceknac-plus.jpg",
     "name": "Paracetamol",
     "formula": "C8H9NO2",
@@ -24,6 +27,7 @@
     "availability": true
   },
   {
+    "id": 4,
     "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdti2AJqSEmJvbgzctWTqfabyHdGx1WOqdNw&usqp=CAU",
     "name": "Amoxicillin",
     "formula": "C16H19N3O5S",
@@ -32,6 +36,7 @@
     "availability": true
   },
   {
+    "id": 5,
     "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCC6QEaqYT9n1CnQ93czT2D4I5TnAH7Vf7uQ&usqp=CAU",
     "name": "Omeprazole",
     "formula": "C17H19N3O3S",
@@ -40,6 +45,7 @@
     "availability": true
   },
   {
+    "id": 6,
     "img": "https://www.tradeindia.com/_next/image/?url=https%3A%2F%2Ftiimg.tistatic.com%2Ffp%2F1%2F007%2F852%2Fvitamin-b-complex-capsules--931.jpg&w=750&q=75",
     "name": "Vitamin B",
     "formula": "C12H15N",
@@ -48,6 +54,7 @@
     "availability": true
   },
   {
+    "id": 7,
     "img": "https://tajgenerics.com/wp-content/uploads/Vitamin-C-Tablet-Ascorbic-acid-Chewable-Tablets-500mg-manufcaturer-supplier-india-1-scaled.jpg",
     "name": "Vitamin C",
     "formula": "C15H21NO",
@@ -56,6 +63,7 @@
     "availability": false
   },
   {
+    "id": 8,
     "img": "https://images.apollo247.in/pub/media/catalog/product/O/2/O2T0001_1_1.jpg",
     "name": "O2",
     "formula": "C14H18ClNO",
@@ -64,6 +72,7 @@
     "availability": true
   },
   {
+    "id": 9,
     "img": "https://cpimg.tistatic.com/07033717/b/4/PPE-Kit.jpg",
     "name": "PPE Kit",
     "formula": "none",
@@ -72,6 +81,7 @@
     "availability": false
   },
   {
+    "id": 10,
     "img": "https://i5.walmartimages.ca/images/Enlarge/392/924/6000198392924.jpg",
     "name": "Enzymes Digestive",
     "formula": "C11H17NO3",
@@ -80,6 +90,7 @@
     "availability": true
   },
   {
+    "id": 11,
     "img": "https://images.apollo247.in/pub/media/catalog/product/V/I/VIT0060_1_1.jpg",
     "name": "Vitamin A",
     "formula": "C16H19NO4",
@@ -88,6 +99,7 @@
     "availability": true
   },
   {
+    "id": 12,
     "img": "https://5.imimg.com/data5/SELLER/Default/2022/7/RV/JY/SB/85949022/cholecalciferol-vitamin-d3-granules.jpeg",
     "name": "Vitamin D3",
     "formula": "C14H18N2O5",
@@ -96,6 +108,7 @@
     "availability": true
   },
   {
+    "id": 13,
     "img": "https://5.imimg.com/data5/SELLER/Default/2023/3/AA/CD/GA/28877593/iron-compound-herbal-syrup.png",
     "name": "LOH",
     "formula": "C17H21NO4",
@@ -104,6 +117,7 @@
     "availability": false
   },
   {
+    "id": 14,
     "img": "https://cdn01.pharmeasy.in/dam/products_otc/E07416/dr-ortho-an-ayurvedic-medicine-oil-bottle-of-60-ml-2-1688467959.jpg",
     "name": "Dr. Ortho Oil",
     "formula": "C16H18N2O4S",
@@ -112,6 +126,7 @@
     "availability": true
   },
   {
+    "id": 15,
     "img": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71U+mYLHcWL._AC_UF1000,1000_QL80_.jpg",
     "name": "SugarFree",
     "formula": "C12H16N2O2",
@@ -120,6 +135,7 @@
     "availability": true
   },
   {
+    "id": 1,
     "img": "https://www.netmeds.com/images/product-v1/600x600/958409/status_n95_face_mask_white_pack_of_20_0_1.jpg",
     "name": "N95 Mask",
     "formula": "none",

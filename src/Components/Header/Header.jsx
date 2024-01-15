@@ -5,7 +5,7 @@ import { FaShoppingCart } from 'react-icons/fa';
 function Header() {
   return (
     <div>
-      <header className="bg-blue-500 p-1 w-full fixed top-0 shadow-md ">
+      <header className="p-1 bg-gray-500 w-full fixed top-0 shadow-md bg-opacity-25">
         <nav className="flex justify-between items-center">
         <div className="bg-blue-500 p-1 rounded-md shadow-md">
           <Link to="/" className="text-l font-extrabold text-white">
@@ -17,25 +17,25 @@ function Header() {
         </div>
 
           <div className="flex space-x-4">
-            <Link to="/" className="text-white p-1  hover:text-gray-300 mx-4">
+            <Link to="/" className="text-blue-700 p-1  hover:text-gray-800 mx-4">
               Home
             </Link>
-            <Link to="/about" className="text-white p-1 hover:text-gray-300 mx-4">
+            <Link to="/about" className="text-blue-700 p-1 hover:text-gray-300 mx-4">
               About
             </Link>
-            <Link to="/user" className="text-white p-1 hover:text-gray-300 mx-4">
+            <Link to="/user" className="text-blue-700 p-1 hover:text-gray-300 mx-4">
               User
             </Link>
-            <Link to="/contact" className="text-white p-1 hover:text-gray-300 mx-4">
+            <Link to="/contact" className="text-blue-700 p-1 hover:text-gray-300 mx-4">
               Contact
             </Link>
-            <Link to="/developer" className="text-white p-1 hover:text-gray-300 mx-4">
+            <Link to="/developer" className="text-blue-700 p-1 hover:text-gray-300 mx-4">
               Developer
             </Link>
             <Link to="/cart" class="bg-blue-500 p-2 hover:bg-blue-700  text-white cart-icon">
             <FaShoppingCart />
             </Link>
-            <Link to="https://www.flipkart.com" className="text-bold text-yellow-700 hover:text-gray-300 mx-4 bg-gray-200 p-2 rounded-lg shadow-md">
+            <Link to="https://www.flipkart.com" className="text-bold text-yellow-700 hover:text-gray-300 mx-4 bg-gray-200 p-1 rounded-lg shadow-md">
               Anushree Kirana Store
             </Link>
           </div>

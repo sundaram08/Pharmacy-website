@@ -34,9 +34,12 @@ export const medicineSlice = createSlice({
       const newMedicine = action.payload;
       state.cartItems = [...state.cartItems, newMedicine];
     },
-    
+    removeCartItems: (state,action)=>{
+      const medicineToRemove = action.payload;
+      state.cartItems = state.cartItems.filter(item => item.id !== medicineToRemove.id);
+    }
   },
 });
 
-export const { setMedicines,searchMedicines, filterMedicines,selectMedicine,clearSelectedMedicine,setCartItems } = medicineSlice.actions;
+export const { setMedicines,searchMedicines, filterMedicines,selectMedicine,clearSelectedMedicine,setCartItems,removeCartItems } = medicineSlice.actions;
 export default medicineSlice.reducer;
