@@ -1,6 +1,7 @@
 import { Client, Account, ID } from "appwrite";
 import conf from "../conf/conf";
-import {login as AuthLogin,logout as AuthLogout} from '../features/userSlice'
+// import {login as AuthLogin,logout as AuthLogout} from '../features/userSlice'
+
 
 export class AuthService {
     client = new Client();
@@ -55,21 +56,21 @@ export class AuthService {
         }
     }
 
-  async checkAuthOnRefresh() {
-    try {
-      const user = await this.getCurrentUser();
-      if (user) {
-        store.dispatch(AuthLogin(user));
-        return user;
-      } else {
-        store.dispatch(AuthLogout());
-        return null;
-      }
-    } catch (error) {
-      console.log("Appwrite service :: checkAuthOnRefresh :: error", error);
-      return null;
-    }
-  }
+//   async checkAuthOnRefresh() {
+//     try {
+//       const user = await this.getCurrentUser();
+//       if (user) {
+//         store.dispatch(AuthLogin(user));
+//         return user;
+//       } else {
+//         store.dispatch(AuthLogout());
+//         return null;
+//       }
+//     } catch (error) {
+//       console.log("Appwrite service :: checkAuthOnRefresh :: error", error);
+//       return null;
+//     }
+//   }
 }
 
 const authService = new AuthService();

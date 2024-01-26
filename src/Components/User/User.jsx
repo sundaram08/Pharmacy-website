@@ -6,7 +6,7 @@ import Profile from './Profile';
 function User() {
     const activeUser = useSelector((state) => state.user.userData);
   return (
-    <div> 
+    <div className='mt-10'> 
 
 {activeUser ? (
         <div>
