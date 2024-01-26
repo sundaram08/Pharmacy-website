@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
+import ShoppingCartIcon from '../Cart/ShoppingCartIcon';
 
 function Header() {
   return (
@@ -33,7 +34,7 @@ function Header() {
               Developer
             </Link>
             <Link to="/cart" class="bg-blue-500 p-2 hover:bg-blue-700  text-white cart-icon">
-            <FaShoppingCart />
+            <ShoppingCartIcon/>
             </Link>
             <Link to="https://www.flipkart.com" className="text-bold text-yellow-700 hover:text-gray-300 mx-4 bg-gray-200 p-1 rounded-lg shadow-md">
               Anushree Kirana Store

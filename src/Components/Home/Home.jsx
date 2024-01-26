@@ -34,7 +34,7 @@ function Home() {
                 <h2 className="text-xs font-semibold mb-2">All</h2>
               </div>
               <div className={` p-1 mt-1 mb-1 border rounded-lg shadow-md flex items-center justify-center hover:bg-blue-500
-               border-${selectedCategory === 'healthcare' ? 'blue-500' : 'red-400'}`}
+               ${selectedCategory === 'healthcare' ? 'border-blue-500' : 'border-red-400'}`}
                 onClick={() => handleCategoryClick('healthcare')} >
                 <h2 className="text-xs font-semibold mb-2">Healthcare</h2>
               </div>
